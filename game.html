@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="instruction.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Dres Up</title>
+  </head>
+
+  <body>
+    <div id="instruction">
+      <h1 class="headerRules">ZASADY GRY:<button id="close_instruction" class="exitButton">X</button></h1>
+      <p>
+        W Gdańsku na Starym Mieście czyhają na ciebie dresy, mewy i otwarte studzienki.
+      </p>
+      <p>KLIKNIJ! <strong>na SPACJĘ / EKRAN</strong> , aby przeskoczyć napotkaną przeszkodę, albo pozostań bez ruchu, aby nie capnęła cię mewa.</p>
+      <p><strong>UWAGA!</strong> Bądź czujny! Z czasem poziom gry wzrasta!</p>
+      <p>Im dłużej wytrwasz "na mieście", tym lepszy uzyskasz wynik!</p>
+      <p>Po zderzeniu z przeszkodą, wynik wraca do 0 i zaczynasz od nowa. Ranking przechowuje <b>pięć wyników</b>, potem ulega wyzerowaniu. Najlepszy wynik oznaczony jest czerwoną gwiazdką<img src="star2.png" />, pozostałe mają kolor żółty <img src="star.png" />.</p>
+      <button id="button_start" class="startButton">START</button>
+    </div>
+
+    <div id="menu">
+      <div id="pause_button"><img src="pause.png" /><img src="play.png" /><br />Pauza/Wznów</div>
+      <div id="score_button"><img src="score.png" /><br />Ranking</div>
+      <div id="instruction_button"><img src="instruction.png" /><br />Instrukcja</div>
+    </div>
+    <div id="timer"></div>
+    <div id="getready">...przygotuj się!<br /><img src="count.gif" /></div>
+    <div id="counter" hidden="true">
+      <p id="countdowntimer">3</p>
+    </div>
+    <div id="lost">
+      <p>PRZEGRAŁEŚ!!!!!!!!</p>
+      <div id="restart_button"><img src="restart.png" /><br />Zagraj ponownie</div>
+      <img src="skull.jpg" />
+    </div>
+    <div id="ranking"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
